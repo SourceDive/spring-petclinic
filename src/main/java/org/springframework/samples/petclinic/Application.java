@@ -19,7 +19,7 @@ package org.springframework.samples.petclinic;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportRuntimeHints;
-import org.springframework.samples.petclinic.config.PetClinicRuntimeHints;
+import org.springframework.samples.petclinic.config.pet.PetClinicRuntimeHints;
 
 /**
  * PetClinic Spring Boot Application.

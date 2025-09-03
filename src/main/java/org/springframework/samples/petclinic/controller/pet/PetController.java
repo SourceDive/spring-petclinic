@@ -21,7 +21,7 @@ import org.springframework.samples.petclinic.domain.owner.Owner;
 import org.springframework.samples.petclinic.domain.pet.Pet;
 import org.springframework.samples.petclinic.domain.pet.PetType;
 import org.springframework.samples.petclinic.dao.owner.OwnerRepository;
-import org.springframework.samples.petclinic.validator.PetValidator;
+import org.springframework.samples.petclinic.validator.pet.PetValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;

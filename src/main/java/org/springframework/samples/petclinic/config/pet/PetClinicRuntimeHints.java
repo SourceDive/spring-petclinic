@@ -13,19 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.samples.petclinic.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import org.springframework.samples.petclinic.domain.vet.Vet;
+package org.springframework.samples.petclinic.config.pet;
 
-/**
- * Models a {@link Vet Vet's} specialty (for example, dentistry).
- *
- * @author Juergen Hoeller
- */
-@Entity
-@Table(name = "specialties")
-public class Specialty extends NamedEntity {
+import org.springframework.aot.hint.RuntimeHints;
+import org.springframework.aot.hint.RuntimeHintsRegistrar;
 
+public class PetClinicRuntimeHints implements RuntimeHintsRegistrar {
+
+	@Override
+	public void registerHints(RuntimeHints hints, ClassLoader classLoader) {
+		hints.resources().registerPattern("db/*"); // https://github.com/spring-projects/spring-boot/issues/32654
+		hints.resources().registerPattern("META-INF/resources/webjars/*");
+	}
 }

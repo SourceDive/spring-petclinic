@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.springframework.samples.petclinic.config;
+package org.springframework.samples.petclinic.config.cache;
 
 import org.springframework.boot.autoconfigure.cache.JCacheManagerCustomizer;
 import org.springframework.cache.annotation.EnableCaching;

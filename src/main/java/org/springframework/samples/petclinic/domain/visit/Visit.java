@@ -23,7 +23,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
-import org.springframework.samples.petclinic.domain.BaseEntity;
+import org.springframework.samples.petclinic.domain.other.BaseEntity;
 
 /**
  * Simple JavaBean domain object representing a visit.

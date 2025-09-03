@@ -32,7 +32,6 @@ import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import javax.xml.bind.annotation.XmlElement;
-import org.springframework.samples.petclinic.domain.Specialty;
 
 /**
  * Simple JavaBean domain object representing a veterinarian.
